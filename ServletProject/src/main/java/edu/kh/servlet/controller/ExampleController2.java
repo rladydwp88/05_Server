@@ -49,7 +49,7 @@ public class ExampleController2 extends HttpServlet{
 		// JSP가 대신 응답 화면을 만들어 주기 위해서는
 		// Servlet이 어떤 요청을 받았는지 알아야한다 ! (req, resp)
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB_INF/views/result.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/result.jsp");
 																// webapp 폴더 기준
 		// -> webapp 폴더는 웹 어플리케이션의 루트(root) 디렉토리로,
 		//	  브라우저를 통해 접근 가능한 정적 및 동적 리소스들이 위치하는 폴더

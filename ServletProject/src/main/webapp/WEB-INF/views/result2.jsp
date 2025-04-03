@@ -26,12 +26,13 @@
 	
 	<%= request.getParameterValues("opt") %>
 	
-	<% if(request.getParameterValues("opt") != null) { %>
-		<ul>
-			<% for(String opt : request.getParameterValues("opt")) { %>
-			 	<li><%= opt %><li>
-			<% } %>
-		</ul>
+	<% String[] options = request.getParameterValues("opt"); %>
+	<% if (options != null) { %>
+	    <ul>
+	        <% for (String opt : options) { %>
+	            <li><%= opt %></li>
+	        <% } %>
+	    </ul>
 	<% } %>
 </body>
 </html>

@@ -78,6 +78,7 @@ public class ELTestServlet2 extends HttpServlet{
 		// 응답처리
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/el/scope.jsp");
 		dispatcher.forward(req, resp);
+		
 	}
 	
 }

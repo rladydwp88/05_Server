@@ -189,7 +189,7 @@
 	
 	<h3>5-1) 일반 for문 처럼 사용하기</h3>
 	<p>1~6까지 1씩 증가하는 for문</p>
-	<c:forEach var="i" begin="i" end="6" step="1">
+	<c:forEach var="i" begin="1" end="6" step="1">
 		<h${i}>h${i} 태그 입니다.</h${i}>
 	</c:forEach>
 	
@@ -200,7 +200,7 @@
 	<h${7-i}>h${7-i} 태그 입니다.</h${7-i}>
 	</c:forEach>
 	
-	<h3> 5-2 일반 for문 +컬렉션 List 사용하기</h3>
+	<h3> 5-2) 일반 for문 +컬렉션 List 사용하기</h3>
 	<ul>
 		<li>nameList: ${nameList}</li>
 		<li>

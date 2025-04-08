@@ -48,7 +48,8 @@
 		
 	<!-- 삭제하기 -->	
 	<entry key="todoDelete">
-	
+	DELETE FROM TB_TODO
+	WHERE TODO_NO = ?
 	</entry>
 
 </properties>

@@ -29,10 +29,13 @@ completeBtn.addEventListener("click", ()=>{
 });
 
 // 삭제 버튼
-const deleteBtn = document.querySelector("#deleteBtn")
+const deleteBtn = document.querySelector("#deleteBtn");
 
-deleteBt.addEventListener("click", ()=>{
-  
+deleteBtn.addEventListener("click", () => {
+  const confirmDelete = confirm("정말 삭제하시겠습니까?");
+  if(confirmDelete) {
+    location.href = "/todo/delete?todoNo=" + todoNo;
+  }
 });
 
 // 수정 버튼
